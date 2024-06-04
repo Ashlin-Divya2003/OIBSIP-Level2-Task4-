@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("ui.avif");
+        
+        }
+    
+        .success-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .success-container p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-container">
+        <h2>Login Successful!</h2>
+        <p id="loginDetails"></p>
+       <p style="background-image: url('ui.aviff');"></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const username = params.get('username=ashlindivya@gmail.com');
+            const password = params.get('password=Ashlin2003');
+            document.getElementById('loginDetails').textContent = `Username:ashlindivya@gmail.com, Password:Ashlin`;
+        });
+    </script>
+</body>
+
+</html>
